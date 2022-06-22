@@ -6,51 +6,6 @@
 #define loop(i,a,b) for(ll i=a;i<=b;i++)
 
 
-//entering array
-int inArr(int a[],int n)
-{
-    for(int i=1;i<=n;i++)
-    {
-        scanf("%d",&a[i]);
-    }
-}
-// Sum of array
-int sumArr(int a[],int n)
-{
-    int sum=0;
-    for(int i=1;i<=n;i++)
-    {
-        sum+=a[i];
-    }
-    return sum;
-}
-//printing array
-int outArr(int a[],int n)
-{
-   for(int i=1;i<=n;i++)
-   {
-       printf("%d",a[i]);
-   }
-}
-
-//Sorting of array
-int sortArr(int a[],int n)
-{
-    int temp;
-    for(int i=1;i<=n;i++)
-    {
-        for(int j=1;j<=i;j++)
-        {
-            if(a[i]<a[j])
-		    {
-    			temp=a[j];
-			    a[j]=a[i];
-                a[i]=temp;	
-            }
-        }
-    }
-	outArr(a,n);
-}
 
 int main(void) 
 {
